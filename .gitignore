@@ -1,0 +1,55 @@
+# ── Secrets & env ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# ── ML artifacts (large, regenerate or download) ──
+ai_ml/models/
+models/
+*.bin
+*.pt
+*.pth
+*.pkl
+*.faiss
+*.index
+*.onnx
+*.h5
+
+# ── Data & uploads ──
+data/
+uploads/
+*.sqlite3
+*.db
+
+# ── Node / React ──
+node_modules/
+frontend/build/
+frontend/dist/
+.npm/
+npm-debug.log*
+yarn-error.log*
+
+# ── Docker / runtime ──
+data/mysql/
+data/postgres/
+*.log
+logs/
+
+# ── Editors / OS ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
